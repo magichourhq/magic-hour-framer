@@ -1,11 +1,11 @@
 import type { framer as sdk } from "@framer/plugin";
-import { videoMetadata, type EditorHost } from "@magichourhq/editor-kit";
+import { DesignVideo } from "@magichourhq/editor-kit";
 type FramerPort = Pick<
   typeof sdk,
   "getImage" | "getPluginData" | "setPluginData" | "uploadFile" | "addComponentInstance"
 > &
   Partial<Pick<typeof sdk, "isAllowedTo" | "getCurrentUser" | "getProjectInfo">>;
-export function framerHost(api: FramerPort, metadata = videoMetadata): EditorHost {
+export function framerHost(api: FramerPort, metadata = DesignVideo.videoMetadata): DesignVideo.EditorHost {
   const uploaded = new Map<string, Awaited<ReturnType<FramerPort["uploadFile"]>>>();
   const recoveryKey = async () => {
     const [user, project] = await Promise.all([api.getCurrentUser?.(), api.getProjectInfo?.()]);

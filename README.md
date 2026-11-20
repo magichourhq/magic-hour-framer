@@ -9,7 +9,7 @@ A [Framer](https://www.framer.com) plugin that generates a short video with the 
 
 The accepted project ID is kept in browser session storage, scoped to the current Framer user and project, so you can close the plugin and resume the same project without another generation charge. You can also enter an existing Magic Hour project ID.
 
-The generation flow and panel come from [`@magichourhq/editor-kit`](https://github.com/magichourhq/editor-kit). This repo adds the Framer side: `src/host.ts` reads the selected image and inserts the video, and `src/main.ts` opens the plugin window.
+The generation flow and panel come from [`@magichourhq/editor-kit`](https://github.com/magichourhq/editor-kit), imported as `import { DesignVideo } from "@magichourhq/editor-kit"`. The panel adds its own styles at runtime. This repo adds the Framer side: `src/host.ts` reads the selected image and inserts the video, and `src/main.ts` opens the plugin window.
 
 ## Development
 
