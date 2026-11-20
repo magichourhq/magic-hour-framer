@@ -1,5 +1,5 @@
 import type { framer as sdk } from "@framer/plugin";
-import { videoMetadata, type EditorHost } from "@magichourhq/design-video";
+import { videoMetadata, type EditorHost } from "@magichourhq/editor-kit";
 type FramerPort = Pick<
   typeof sdk,
   "getImage" | "getPluginData" | "setPluginData" | "uploadFile" | "addComponentInstance"

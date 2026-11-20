@@ -1,5 +1,5 @@
 import { expect, test } from "vitest";
-import type { VideoResult } from "@magichourhq/design-video";
+import type { VideoResult } from "@magichourhq/editor-kit";
 import { framerHost } from "../src/host";
 
 const result: VideoResult = {
