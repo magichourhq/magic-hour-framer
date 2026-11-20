@@ -51,6 +51,11 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           TAG="v$VERSION"
+          # A version like 0.1.0-dev.1 is a test build, so mark it as a prerelease.
+          PRERELEASE=()
+          if [[ "$VERSION" == *-* ]]; then
+            PRERELEASE=(--prerelease)
+          fi
           if gh release view "$TAG" --repo "$GITHUB_REPOSITORY" > /dev/null 2>&1; then
             exit 0
           fi
@@ -58,4 +63,5 @@ jobs:
             --repo "$GITHUB_REPOSITORY" \
             --target "$GITHUB_SHA" \
             --title "$TAG" \
+            "${PRERELEASE[@]}" \
             --generate-notes
