@@ -86,28 +86,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@magichourhq/api-types@npm:0.1.1":
+"@magichourhq/api-types@npm:0.1.3":
+  version: 0.1.3
+  resolution: "@magichourhq/api-types@npm:0.1.3"
+  checksum: 10/c759af36a9080449d03963855ca7eb44c2c5c22ca686227db47201f66087eba890015bbd57b5ab33647bf260ecef59cf3331ef8cbe83d1966a52829a44950c7a
+  languageName: node
+  linkType: hard
+
+"@magichourhq/browser-client@npm:^0.3.6":
+  version: 0.3.6
+  resolution: "@magichourhq/browser-client@npm:0.3.6"
+  dependencies:
+    "@magichourhq/api-types": "npm:0.1.3"
+  checksum: 10/6aadb226cdd84407a036831a76890bd0be92c98dc5487a4afb9f5225bcac8dd0f8f9517e6ed918a39abe6512adde4afab220fc00e58c4e48a2ddd472a1ae040e
+  languageName: node
+  linkType: hard
+
+"@magichourhq/editor-kit@npm:^0.1.1":
   version: 0.1.1
-  resolution: "@magichourhq/api-types@npm:0.1.1"
-  checksum: 10/6bff6936b8d30165d8ad469b657096f1bc0d535d99bf6d4b06d120ad1af1abad4993ca142c26284fe205d575ea0c0f24630829d8b9583421e452a09696ad82d5
-  languageName: node
-  linkType: hard
-
-"@magichourhq/browser-client@npm:^0.3.2":
-  version: 0.3.2
-  resolution: "@magichourhq/browser-client@npm:0.3.2"
+  resolution: "@magichourhq/editor-kit@npm:0.1.1"
   dependencies:
-    "@magichourhq/api-types": "npm:0.1.1"
-  checksum: 10/9a3d9cfc5418fe865977942c6daae59d5cd79d00b991a89f4f649a6df6e267a0ecb85b7a968282b1c52e953dc26af874b44b675fecd0fd2597d00ef30a30ed95
-  languageName: node
-  linkType: hard
-
-"@magichourhq/editor-kit@npm:^0.1.0":
-  version: 0.1.0
-  resolution: "@magichourhq/editor-kit@npm:0.1.0"
-  dependencies:
-    "@magichourhq/browser-client": "npm:^0.3.2"
-  checksum: 10/504ef07d8169369b9aa42f578a25d4764d556325c99cbd9465ce226321e742a3cfdffd17db4128165e0782153840e79485d01bc4a284715818f31faa3d268c7b
+    "@magichourhq/browser-client": "npm:^0.3.6"
+  checksum: 10/f7ce58cba40bb76a22ee7f030cf39b380569c5abf7846efd4c494b87d9fd765c5000ee59d7de6d605e9e62b4e10c0694da6250b4a1c724e9a921823594849fb0
   languageName: node
   linkType: hard
 
@@ -814,7 +814,7 @@ __metadata:
   resolution: "magic-hour-framer@workspace:."
   dependencies:
     "@framer/plugin": "npm:5.1.0"
-    "@magichourhq/editor-kit": "npm:^0.1.0"
+    "@magichourhq/editor-kit": "npm:^0.1.1"
     "@types/node": "npm:^24.0.0"
     csstype: "npm:^3.1.1"
     framer-plugin-tools: "npm:1.2.3"
