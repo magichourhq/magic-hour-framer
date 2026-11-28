@@ -86,28 +86,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@magichourhq/api-types@npm:0.2.0":
-  version: 0.2.0
-  resolution: "@magichourhq/api-types@npm:0.2.0"
-  checksum: 10/203940e63c30bf2608fd0d8c39c8bd648f888906d4f4cf6ce9b042dee5e6ae92e4078041ba101821b117ba8b1d09684bd7ffbebb6f0d54661a330420d1be6dd1
+"@magichourhq/api-types@npm:0.3.0":
+  version: 0.3.0
+  resolution: "@magichourhq/api-types@npm:0.3.0"
+  checksum: 10/660b92475dfdb7b56b8d5e5bc62f53b1dfce77df5c8a88cc5c89f713f65eb7d4121efa44873b8afff4b1566bd04f6d4f88b186606c9717cb120af6134ba28cc0
   languageName: node
   linkType: hard
 
-"@magichourhq/browser-client@npm:^0.3.9":
-  version: 0.3.9
-  resolution: "@magichourhq/browser-client@npm:0.3.9"
+"@magichourhq/browser-client@npm:^0.3.10":
+  version: 0.3.10
+  resolution: "@magichourhq/browser-client@npm:0.3.10"
   dependencies:
-    "@magichourhq/api-types": "npm:0.2.0"
-  checksum: 10/ddb8c1f225efe836d82b806c5bbb63542d710212cbe71fbff05faee99f0e0881c527686630ec733818ef8319684339dd465e26f1858397632a649f9a1c092400
+    "@magichourhq/api-types": "npm:0.3.0"
+  checksum: 10/1b748f3c17b9097ab0c4936cc87d89dbe45d83df52449eff59dcf87e543d3a9b22c1d79f465fe3d79f7f3bdd32a1e22288809a6ba4b2eb3089d7b5f93fa0c9d8
   languageName: node
   linkType: hard
 
-"@magichourhq/editor-kit@npm:^0.1.4":
-  version: 0.1.4
-  resolution: "@magichourhq/editor-kit@npm:0.1.4"
+"@magichourhq/editor-kit@npm:^0.1.5":
+  version: 0.1.5
+  resolution: "@magichourhq/editor-kit@npm:0.1.5"
   dependencies:
-    "@magichourhq/browser-client": "npm:^0.3.9"
-  checksum: 10/86f68c7b4c17983518caf648e9cd6b9a5506a3254359b1060c82466668281caa3a323a7d66aebb1299f97d8b6df5b0e94ade5762f920c663971f928e98a074e6
+    "@magichourhq/browser-client": "npm:^0.3.10"
+  checksum: 10/45841799acfd73db06e800da9ba52b289ea9695294857a8415b38d4c0a46ad8962a4231983f79f93088a3345473d9c8e1101f0a19d4594eedc1126b9d423a70a
   languageName: node
   linkType: hard
 
@@ -814,7 +814,7 @@ __metadata:
   resolution: "magic-hour-framer@workspace:."
   dependencies:
     "@framer/plugin": "npm:5.1.0"
-    "@magichourhq/editor-kit": "npm:^0.1.4"
+    "@magichourhq/editor-kit": "npm:^0.1.5"
     "@types/node": "npm:^24.0.0"
     csstype: "npm:^3.1.1"
     framer-plugin-tools: "npm:1.2.3"
