@@ -1,6 +1,6 @@
 {
   "name": "magic-hour-framer",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "private": true,
   "type": "module",
   "license": "MIT",
@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@framer/plugin": "5.1.0",
-    "@magichourhq/editor-kit": "^0.1.4",
+    "@magichourhq/editor-kit": "^0.1.5",
     "csstype": "^3.1.1",
     "react": "18.3.1",
     "react-dom": "18.3.1"
